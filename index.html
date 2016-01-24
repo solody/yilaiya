@@ -136,6 +136,58 @@
         .active div.ele_05_girl2 {transform:translateX(50%) translateY(0%) rotate(-15deg); box-shadow: 0 0 5px 2px #999;opacity: 1;}
         .active div.ele_05_right { opacity: 1;}
         /*----------------------------------------------------*/
+        
+        
+        /* Section 06 ======================================= */
+        div.ele_06_top,div.ele_06_bottom { transition-delay: 0.7s }
+        div.ele_06_top {height:60%; overflow: hidden;}
+        div.ele_06_bottom {height:40%; background-color: #FFFFFF;}
+        div.ele_06_top_left,div.ele_06_top_right,div.ele_06_bottom_left,div.ele_06_bottom_right{
+	        float:left; height: 100%;
+        }
+        div.ele_06_top_left,div.ele_06_bottom_left {width:100%; }
+        div.ele_06_top_right,div.ele_06_bottom_right {width:0%;}
+        div.ele_06_top_left,div.ele_06_bottom_right {background-color:#FFFFFF; overflow: hidden;}
+        div.ele_06_top_right,div.ele_06_bottom_left { background-color:#56bced ;}
+        div.ele_06_top_right {background-image: url(images/06/bg1.png); background-size:auto 100%; background-repeat: no-repeat;}
+        div.ele_06_bottle { transform:translateX(200%) translateY(10%) rotate(450deg);  opacity: 0;  }
+        div.ele_06_text { height:100%; overflow:hidden; color:#FFF; transform:translateX(100%) translateY(-40%);  font-family: Constantia,helvetica,"黑体"; font-size: 15pt;}
+        div.ele_06_text span {display:inline-block; padding-left: 3%; font-size:120%;}
+        img.ele_06_bottles { transform:translateX(-100%) translateY(20%); }
+        .active div.ele_06_top_left, .active div.ele_06_bottom_left {width:20%;  }
+        .active div.ele_06_top_right, .active div.ele_06_bottom_right {width:80%;  transition-delay: 1s}
+        .active div.ele_06_bottle { transform:translateX(45%) translateY(10%) rotate(0deg);  transition-delay: 1.3s;  opacity: 1;  }
+        .active div.ele_06_text {transform:translateX(40%) translateY(-40%);  transition-delay: 1.7s;}
+        .active img.ele_06_bottles { transform:translateX(48%) translateY(20%); transition-delay: 2.3s;}
+        /*----------------------------------------------------*/
+        
+        /* Section 07 ======================================= */
+        div.ele_07_top,div.ele_07_bottom { transition-delay: 0.7s }
+        div.ele_07_top {height:60%; overflow: hidden;}
+        div.ele_07_bottom {height:40%; background-color: #FFFFFF;}
+        div.ele_07_top_left,
+        div.ele_07_top_right,
+        div.ele_07_bottom_left,
+        div.ele_07_bottom_right{
+	        float:left; height: 100%;
+        }
+        div.ele_07_top_left,div.ele_07_bottom_left {width:0%; }
+        div.ele_07_top_right,div.ele_07_bottom_right {width:100%;}
+        div.ele_07_top_left,div.ele_07_bottom_right {background-color:#FFFFFF;}
+        div.ele_07_top_right,div.ele_07_bottom_left { background-color:#56bced; overflow: hidden;}
+        div.ele_07_top_left {background-image: url(images/07/bg.png); background-size:auto 100%; background-position:30%; background-repeat: no-repeat;}
+        div.ele_07_bottle { transform:translateX(-200%) translateY(10%) rotate(450deg);  opacity: 0;  }
+        div.ele_07_text { height:50%; overflow:hidden; color:#632236; transform:translateX(65%) translateY(-100%);  font-family: Constantia,helvetica,"黑体"; font-size: 15pt;opacity: 0; }
+        div.ele_07_text span {display:inline-block; padding-left: 3%; font-size:120%;}
+        img.ele_07_textdot { transform:translateX(80%) translateY(-120%); }
+        .active div.ele_07_bottom_left {width:80%;  transition-delay: 1.5s;}
+        .active div.ele_07_bottom_right { width:20%; transition-delay: 1.5s; }
+        .active div.ele_07_top_left { width:80%; transition-delay: 1s; }
+        .active div.ele_07_top_right {  width:20%; transition-delay: 1s;  }
+        .active div.ele_07_bottle { transform:translateX(65%) translateY(15%) rotate(0deg);  transition-delay: 1.3s;  opacity: 1;  }
+        .active div.ele_07_text {transform:translateX(65%) translateY(-80%); opacity: 1;font-size: 15pt;  transition-delay: 1.7s;}
+        .active img.ele_07_textdot { transform:translateX(80%) translateY(40%); transition-delay: 2.3s; }
+        /*----------------------------------------------------*/
 
     </style>
 </head>
@@ -188,6 +240,44 @@
                 <p><span>品牌愿景</span>帮助连锁门店解决甲油产品采购问题、降低采购成本，有效提升该品类在门店的销售占比，让消费者买到高性价比的优质甲油产品。</p>
                 <p><span>品牌广告语</span>玩出彩，秀出范！ </p>
             </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="ele ele_06_top">
+            <div class="ele ele_06_top_left"></div>
+            <div class="ele ele_06_top_right">
+                <div class="ele ele_06_bottle" style="width:33%; background-image: url(images/06/bottle.png); background-repeat:no-repeat; background-size: 98% 98%; background-position: center center; padding-bottom:28%;"></div>
+                <div class="ele ele_06_text">
+                    <p>CLASSIC COLOR</p>
+                    <P>水性经典色系列<span>16色</span></P>
+                </div>
+            </div>
+        </div>
+        <div class="ele ele_06_bottom">
+            <div class="ele ele_06_bottom_left"></div>
+            <div class="ele ele_06_bottom_right">
+                <img class="ele ele_06_bottles" src="images/06/bottles.png" style="width:40%;">
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <div class="ele ele_07_top">
+            <div class="ele ele_07_top_left">
+                <div class="ele ele_07_bottle" style="width:33%; background-image: url(images/07/bottle.png); background-repeat:no-repeat; background-size: 35% auto; background-position: center center; padding-bottom:28%;"></div>
+                <div class="ele ele_07_text">
+                    <p>POPULAR COLOR</p>
+                    <P>水性流行色系列<span>10色</span></P>
+                </div>
+            </div>
+            <div class="ele ele_07_top_right"></div>
+        </div>
+        <div class="ele ele_07_bottom">
+            <div class="ele ele_07_bottom_left">
+                <img class="ele ele_07_textdot" src="images/07/text.png" style="width:40%;">
+            </div>
+            <div class="ele ele_07_bottom_right"></div>
         </div>
     </div>
 
