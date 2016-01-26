@@ -215,12 +215,28 @@
         
         /* Section 10 =======================================   */
         div.ele_10_top { height:30%; background-color: #FFF;}
-        div.ele_10_bottom { height:70%; overflow: hidden;}
-        div.ele_10_bottom_left,div.ele_10_bottom_right{ width:50%; height:100%; float:left; overflow:visible;}
+        div.ele_10_bottom { height:70%; overflow:visible; text-align:center;}
+        div.ele_10_bottom_left,div.ele_10_bottom_right{ width:50%; height:100%; float:left; overflow:visible; opacity: 0;}
         div.ele_10_bottom_left { background-color: #7dcdf4;}
         div.ele_10_bottom_right { background-color: #fff100;}
+        div.ele_10_bottom_left img {margin-top:0%;opacity: 0;}
+        div.ele_10_bottom_right img {margin-top:0%;opacity: 0;}
+        div.ele_10_text_left {color:#FFF;}
+        div.ele_10_text_right {color:#666; margin-top:-18%; margin-left:-30%;}
+        div.ele_10_text_left, div.ele_10_text_right {  font-family: Constantia,helvetica,"黑体"; font-size: 15pt;opacity: 0;}
+        .active div.ele_10_bottom_left img {margin-top:-18%;opacity: 1; transition-delay: 1s;}
+        .active div.ele_10_bottom_right img {margin-top:-25%;opacity: 1; transition-delay: 1s; }
+        .active div.ele_10_text_left, .active div.ele_10_text_right {opacity: 1; transition-delay: 1.5s;}
+        .active div.ele_10_bottom_left, .active div.ele_10_bottom_right {opacity: 1;}
         /*----------------------------------------------------*/
         
+        div.ele_11_bg { width:100%; height:100%; overflow: hidden; background-image: url(images/11/bg2.png); background-size:auto 100%;  background-repeat: repeat-x;}
+        div.ele_11_bg_poster { float:left; width:80%; height:100%; background-image: url(images/11/bg.png); background-position:center right; background-size:auto 100%; background-repeat: no-repeat; }
+        div.ele_11_bg_left,div.ele_11_bg_right { float: left; width:20%;height:100%;}
+        div.ele_11_bg_left_top,div.ele_11_bg_right_bottom { height:67.45%; background-color: #fff100;}
+        div.ele_11_bg_left_bottom,div.ele_11_bg_right_top { height:32.55%; background-color: #7dcef4;}
+        div.ele_11_bg_right_top { height:67.45%; background-color: #fff100;}
+        div.ele_11_bg_right_bottom { height:32.55%; background-color: #7dcef4;}
     </style>
 </head>
 <body>
@@ -346,15 +362,15 @@
         <div class="ele ele_10_top"></div>
         <div class="ele ele_10_bottom">
             <div class="ele ele_10_bottom_left">
-                <img src="images/10/product.png"  style="width:50%;">
+                <img class="ele" src="images/10/product.png"  style="width:50%;">
                 <div class="ele ele_10_text_left">
 	                <p>NAIL SUPPLEMENTS</p>
 	                <p>美甲辅助品</p>
                 </div>
             </div>
             <div class="ele ele_10_bottom_right">
-                <img src="images/10/product2.png"  style="width:50%;">
-                <div class="ele ele_10_text_left">
+                <img class="ele" src="images/10/product2.png"  style="width:50%;">
+                <div class="ele ele_10_text_right">
 	                <p>IMAGE UNDER</p>
 	                <p>形象展柜</p>
                 </div>
@@ -362,7 +378,15 @@
         </div>
     </div>
     
-    <div class="section"> <h2>Slide 2</h2> </div>
+    <div class="section">
+        <div class="ele ele_11_bg">
+            <div class="ele_11_bg_poster"></div>
+            <div class="ele_11_bg_right">
+                <div class="ele_11_bg_right_top"></div>
+                <div class="ele_11_bg_right_bottom"></div>
+            </div>
+        </div>
+    </div>
 
 </div>
 </body>
