@@ -9,23 +9,26 @@
     <script src="https://cdn.bootcss.com/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="vendor/fullPage/jquery.fullpage.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                sectionsColor: ['#990033', '#388eb6','#FFFFFF', '#FFFFFF', '#FFFFFF','#FFFFFF','#FFFFFF'],
-                scrollingSpeed: 1000,
-                'navigation': true,
-                'navigationPosition': 'right',
-                'navigationTooltips': ['伊莱娅', '行业现状概况', '市场机会', '品牌定位','渠道定位','水性经典色系列16色','水性流行色系列10色','油性经典流行色系列20色','油性经典色系列30色'],
-            });
-
-            $('body').mousemove(function(e){
-                if (e.pageY < 88) {
-                    $('#header').css({'opacity':'1','transition':'all 1s'});
-                } else {
-                    $('#header').css({'opacity':'0','transition':'all 1s'});
-                }
-            });
+    window.onload = function(){
+    	$('#fullpage').fullpage({
+            sectionsColor: ['#990033', '#388eb6','#FFFFFF', '#FFFFFF', '#FFFFFF','#FFFFFF','#FFFFFF'],
+            scrollingSpeed: 1000,
+            'navigation': true,
+            'navigationPosition': 'right',
+            'navigationTooltips': ['伊莱娅', '行业现状概况', '市场机会', '品牌定位','渠道定位','水性经典色系列16色','水性流行色系列10色','油性经典流行色系列20色','油性经典色系列30色'],
         });
+
+    	$('body').mousemove(function(e){
+            if (e.pageY < 88) {
+                $('#header').css({'opacity':'1','transition':'all 1s'});
+            } else {
+                $('#header').css({'opacity':'0','transition':'all 1s'});
+            }
+        });
+
+    	$('#loading_coverlayer').css('display','none');
+    	$('#fullpage').css('display','block');
+    };
     </script>
     <style type="text/css">
         /* Fixed header and footer.
@@ -237,12 +240,14 @@
         div.ele_11_bg_left_bottom,div.ele_11_bg_right_top { height:32.55%; background-color: #7dcef4;}
         div.ele_11_bg_right_top { height:67.45%; background-color: #fff100;}
         div.ele_11_bg_right_bottom { height:32.55%; background-color: #7dcef4;}
+        body {margin:0; padding:0;}
     </style>
 </head>
 <body>
 <div id="header">CHINELY</div>
 <div id="footer">©&nbsp;广州彩怒莉化妆品有限公司</div>
-<div id="fullpage">
+<div id="loading_coverlayer" style="position: absolute; z-index:8; top:0px; left:0px; background-color: #666; color:#fff;display:table; font-size:18pt; text-align:center;  width:100%; height:100%;"><div style="  width:100%; height:100%; vertical-align:middle; display:table-cell;">正在加载动画。。。</div></div>
+<div id="fullpage" style="display:none;">
     <div class="section active">
         <div style="background-image: radial-gradient(#490119 10%, #650022 30%, #990033 60%);overflow: hidden;">
             <div class="ele ele_01_photo"><div style="background-color: #FFFFFF; background-image: url(images/01/girl.png); background-size: cover; background-position: top center; padding-bottom:60%;"></div></div>
